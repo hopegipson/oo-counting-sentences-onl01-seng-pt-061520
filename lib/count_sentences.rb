@@ -30,7 +30,7 @@ class String
   def count_sentences
     newarray = []
     newarray = self.split(/[.?!]/)
-    newarray= newarray.map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}
+    newarray= newarray.map{|x| !(x.match(/\w+/).nil?)}.delete{|x| x == false}
     newarray.count
   end
 end
