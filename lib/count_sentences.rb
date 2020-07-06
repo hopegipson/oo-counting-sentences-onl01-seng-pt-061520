@@ -32,7 +32,5 @@ class String
     newarray = self.split(/[.?!]/)
     newarray= newarray.map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}
     newarray.count
-    
-
   end
 end
