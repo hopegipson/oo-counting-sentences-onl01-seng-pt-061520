@@ -30,6 +30,7 @@ class String
   def count_sentences
     newarray = []
     newarray = self.split(/[.?!]/)
+    newarray.map()
     newarray.count
     
 
